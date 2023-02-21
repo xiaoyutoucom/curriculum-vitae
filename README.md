@@ -14,10 +14,8 @@ npm install
 
 #### 使用说明
 手机端页面预览
-![输入图片说明](image.png)
-![输入图片说明](image.png)
-![输入图片说明](image.png)
+![输入图片说明](image1.png)
+![输入图片说明](image3.png)
+![输入图片说明](image4.png)
 电脑端页面预览
-![输入图片说明](image.png)
-![输入图片说明](image.png)
 ![输入图片说明](image.png)
