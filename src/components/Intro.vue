@@ -23,7 +23,8 @@
                             </span>
                         </p>
 						<p>目标城市：北京
-						<p>年龄：28
+						<p>年龄：28 工龄：6年
+						<p>临沂大学 软件工程 本科
 						</p>
 						<p>期望薪资：<span class="info_emphasis" style="color: yellow !important;">25k-30k</span>
 						</p>
@@ -53,13 +54,27 @@
                 <p class="title animate__animated animate__bounce animate__fadeInRightBig ">{{item.title}}</p>
                 <div class="whoami animate__animated animate__bounce animate__fadeInLeftBig">
                     <img :src="me" alt="个人照片" class="pic">
+					
                     <div class="introduce">
-                        <p>我叫 {{ myinfo.global.name }} ,</p>
+                        <p>我叫 {{ myinfo.global.name }} </p>
+						
                         <div> {{ myinfo.intro.aboutme.introduce }}</div>
+						<div>获得的证书信息</div>
+						<div> 1. 英语四级</div>
+						<div>2. 系统集成项目管理（软考）</div>
+						<div>3. 二级 C 语言</div>
                     </div>
                 </div>
+				<br>
+				<div style="height: 300px;">
+				<el-steps direction="vertical" :active="3">
+				  <el-step title="临沂大学" description="2013-2017 专业软件工程 本科"></el-step>
+				  <el-step title="浪潮国际"  description="2017-2018 全栈开发 .net+vue"></el-step>
+				  <el-step title="正元地理信息" description="2019-2021 java后端开发 职位组长"></el-step>
+				  <el-step title="大陆机电" description="2022-至今 java后端开发 项目经理"></el-step>
+				</el-steps>
+				</div>
             </template>
-
 
             <!-- skill(我会些什么)介绍项 -->
             <template #skills>
@@ -116,18 +131,24 @@
 					    trigger="click"
 	                   >
 					   <p>上线地址：<a :href="work.url">{{work.url}}</a></p>
-						 <p>项目时间：{{work.title}}</p>
+						 <p>项目时间：{{work.time}}</p>
 						 <p>项目角色：<el-tag type="danger" style="background-color: #fef0f0 !important;border-color:#fde2e2 !important;color: #f51e1e !important;">{{work.tag}}</el-tag></p>
 						  <p>所用技术：</p>
 						 <p><el-tag  v-for="(jss, index) in work.js" :key="index" style="background-color: #f0f9eb !important;border-color:#e1f3d8 !important;color: #00e34b !important;margin-left: 2%;margin-top: 1%;">{{jss}}</el-tag></p>			 
-						 <p>数据库：{{work.title}}</p>
-						 <p>项目详情：{{work.title}}</p>
-						  <p style="color: aqua !important">点击查看图库详细↓</p>
-						 <el-image 
+						 <p>数据库：{{work.db}}</p>
+						 <p>项目详情：{{work.text}}</p>
+				<!-- 		  <p style="color: aqua !important">点击查看图库详细↓</p> -->
+						   <el-carousel height="250px" direction="vertical">
+						        <el-carousel-item v-for="(work, index) in work.srcList" :key="work">
+	
+								  <img :src="work" style="height: 250px" ></img>
+						        </el-carousel-item>
+						      </el-carousel>
+					<!-- 	 <el-image 
 						     style="width: 300px;"
 						     :src="work.pic" 
 						     :preview-src-list="work.srcList">
-						   </el-image>
+						   </el-image> -->
 
 					    <el-button slot="reference" style="float: right;margin-top: -10px;border: none;">>--查看详情</el-button>
 					  </el-popover>
@@ -146,7 +167,10 @@
             <!-- contact(联系我)介绍项 -->
             <template #contact>
                 <p class="title animate__animated animate__bounce animate__fadeInRightBig ">{{item.title}}</p>
-
+				本人为人真诚，有很强的责任心。
+				同时，具备很强的自学能力、逻辑思维
+				能力以及环境适应能力。善于与他人的
+				沟通和交流，所以我有信心能够胜任本份工作。
                 <el-descriptions
                     border
                     :column="1"
@@ -280,9 +304,25 @@
 
 <style scoped lang="less">
     @import "../config.less";
+	::v-deep .el-step__line{
+		background-color: wheat !important;
+	}
+	v-deep .el-step__icon is-text{
+		border-color: #475669;
+	}
 .el-image-viewer__canvas{
 	width: 800px !important;
 }
+   ::v-deep.el-carousel__indicators .el-carousel__indicators--horizontal{
+	visibility: hidden;
+}
+  .el-carousel__item h3 {
+    color: #475669;
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 200px;
+    margin: 0;
+  }
     #intro_container {
         width: 90%;
         margin: 0 auto;

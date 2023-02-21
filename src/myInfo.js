@@ -130,7 +130,13 @@ export default {
 			      skill_name: ".net+winfrom",
 			      progress_of_master: 60,
 			     icon: "bxl-c",  // icon类名
-			  }
+			  },
+			  {
+			      skill_name: "Linux",
+			      progress_of_master: 60,
+			     icon: "bxl-c",  // icon类名
+			  },
+			  
             ],
             // 对自己会的技能做简单的介绍
             skills_introduction: `
