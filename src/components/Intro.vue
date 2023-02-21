@@ -11,20 +11,21 @@
             <!-- home(首页)介绍项 -->
             <template #home>
                 <div class="home_item animate__animated animate__bounce animate__fadeInDown">
-                    <div class="sayHi">
+                    <div class="sayHi" style="font-size: 23px !important;margin-left: 10%;">
                         <p>尊敬的面试官您好,感谢给予我这次机会</p>
                         <p>
                             我叫
-                            <span class="info_emphasis">于鑫</span>
+                            <span class="info_emphasis" style="color: #00e34b !important;">于鑫</span>
                         </p>
-                        <p>我想应聘的岗位是:
-                            <span class="info_emphasis">
+                        <p>岗位:
+                            <span class="info_emphasis" style="color: skyblue !important;">
                                 {{ myinfo.intro.home.expect_position }}
                             </span>
                         </p>
 						<p>目标城市：北京
+						<p>年龄：28 生日:1994/10/20
 						</p>
-						<p>期望薪资：25k-30k
+						<p>期望薪资：<span class="info_emphasis" style="color: yellow !important;">25k-30k</span>
 						</p>
 						<p>合适请联系我吧
 						</p>
