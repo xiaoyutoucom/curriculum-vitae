@@ -23,7 +23,7 @@
                             </span>
                         </p>
 						<p>目标城市：北京
-						<p>年龄：28 生日:1994/10/20
+						<p>年龄：28
 						</p>
 						<p>期望薪资：<span class="info_emphasis" style="color: yellow !important;">25k-30k</span>
 						</p>
