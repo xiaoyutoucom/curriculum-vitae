@@ -154,8 +154,12 @@ export default {
 				time: "2021/12/30",
 				tag:"开发组长",
 				db: "mysql",
-					js:  ["SpringCloud","RocketMQ","webSocket","Elasticsearch","Redis","Jenkins"],
-				 text: "http://wanghong.fitzlovexx.top/",
+					js:  ["SpringCloud","RocketMQ","webSocket","Elasticsearch","Redis","Jenkins","Mysql"],
+				 text: "工业互联网标识解析二级节点（大陆通工业互联网仪表平台）（www.yibiao163.cn）\
+				 是工信部2019年工业互联网创新发展工程项目，为仪表行业企业和用户提供灵活的标识编码注册和标识解析服务\
+				 ，打造仪表行业特定应用场景，促进仪器仪表的质量管理、重要产品追溯、产品全生命周期管理等应用。\
+				  主要功能有：用户的注册与统一登录、仪表商城、标识中心（器具的创建、流转和赋码）、在线客服与消息通知、数据统计"
+				 ,
 				 srcList: [
 				    require("@/assets/works/仪表平台1.jpg"),
 					require("@/assets/works/仪表平台11.jpg"),

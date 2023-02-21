@@ -127,21 +127,20 @@
 					  <el-popover
 					    placement="bottom"
 					    :title="work.title"
-					    
+					  
 					    trigger="click"
 	                   >
-					   <p>上线地址：<a :href="work.url">{{work.url}}</a></p>
-						 <p>项目时间：{{work.time}}</p>
-						 <p>项目角色：<el-tag type="danger" style="background-color: #fef0f0 !important;border-color:#fde2e2 !important;color: #f51e1e !important;">{{work.tag}}</el-tag></p>
-						  <p>所用技术：</p>
-						 <p><el-tag  v-for="(jss, index) in work.js" :key="index" style="background-color: #f0f9eb !important;border-color:#e1f3d8 !important;color: #00e34b !important;margin-left: 2%;margin-top: 1%;">{{jss}}</el-tag></p>			 
-						 <p>数据库：{{work.db}}</p>
-						 <p>项目详情：{{work.text}}</p>
+					   <p style="padding-left: 1% !important;">上线地址：<a :href="work.url">{{work.url}}</a></p>
+						 <p style="padding-left: 1% !important;">项目时间：{{work.time}}</p>
+						 <p style="padding-left: 1% !important;">项目角色：<el-tag type="danger" style="background-color: #fef0f0 !important;border-color:#fde2e2 !important;color: #f51e1e !important;">{{work.tag}}</el-tag></p>
+						  <p style="padding-left: 1% !important;">所用技术：</p>
+						 <p style="width: 26.5rem;"><el-tag  v-for="(jss, index) in work.js" :key="index" style="background-color: #f0f9eb !important;border-color:#e1f3d8 !important;color: #00e34b !important;margin-left: 2%;margin-top: 1%;">{{jss}}</el-tag></p>			 
+						 <p style="width: 26rem;padding-left: 1% !important;;">项目详情：{{work.text}}</p>
 				<!-- 		  <p style="color: aqua !important">点击查看图库详细↓</p> -->
-						   <el-carousel height="250px" direction="vertical">
+						   <el-carousel width=" 26.5rem;" direction="vertical">
 						        <el-carousel-item v-for="(work, index) in work.srcList" :key="work">
 	
-								  <img :src="work" style="height: 250px" ></img>
+								  <img :src="work" style="width:   26.5rem;" ></img>
 						        </el-carousel-item>
 						      </el-carousel>
 					<!-- 	 <el-image 
